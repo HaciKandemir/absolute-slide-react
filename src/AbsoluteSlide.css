@@ -1,0 +1,15 @@
+*:has(.ASlide.isPressed){
+  input {
+    cursor: ew-resize;
+  }
+  cursor: ew-resize;
+}
+
+.ASlide {
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+    cursor: ew-resize;
+  }
+}
