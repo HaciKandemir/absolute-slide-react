@@ -10,7 +10,7 @@ type Props = {
   children: React.ReactNode;
 };
 
-const AbsoluteSlide: React.FC<Props> = ({value, min=-50, max=100, step=1, onChange, children}) => {
+const AbsoluteSlide: React.FC<Props> = ({value, min, max, step=1, onChange, children}) => {
   const [mousePressed, setMousePressed] = useState(false);
   let _startX = 0;
 

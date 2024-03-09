@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <h1>Absolue Slider Demo</h1>
-      <h6>Deneme: {deneme}</h6>
       <div>
         <AbsoluteSlide value={deneme} onChange={(e) => {setDeneme(e)} }>
           <span style={{padding: '0.5rem'}}>W</span>
@@ -20,14 +19,14 @@ function App() {
       </div>
 
       <div>
-        <AbsoluteSlide value={deneme1} onChange={(e) => {setDeneme1(e)} }>
+        <AbsoluteSlide value={deneme1} min={-50} max={100} onChange={(e) => {setDeneme1(e)} }>
           <span style={{padding: '0.5rem'}}>W</span>
         </AbsoluteSlide>
         <input value={deneme1} onChange={(e) =>setDeneme1(parseInt(e.target.value)) } />
       </div>
 
       <div>
-        <AbsoluteSlide value={deneme2} onChange={(e) => {setDeneme2(e)} }>
+        <AbsoluteSlide value={deneme2} step={0.1} onChange={(e) => {setDeneme2(e)} }>
           <span style={{padding: '0.5rem'}}>W</span>
         </AbsoluteSlide>
         <input value={deneme2} onChange={(e) =>setDeneme2(parseInt(e.target.value)) } />
